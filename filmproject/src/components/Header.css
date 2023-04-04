@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(48, 50, 180);
+  white-space: nowrap;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links > button {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 540px) {
+  .links {
+    display:none;
+  }
+}
