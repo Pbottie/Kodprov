@@ -16,8 +16,45 @@
   margin: 0 5px;
 }
 
+.hamburger {
+  display: none;
+}
+
 @media screen and (max-width: 540px) {
   .links {
-    display:none;
+    display: none;
+  }
+
+  .links.expanded {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 450px);
+    background-color: rgb(48, 50, 180);
+    border-top: 1px solid black;
+    display: flex;
+  }
+  .links > button {
+    margin: 5px;    
+  }
+
+  button {
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.4em 1.1em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  .hamburger {
+    display: flex;
+    align-items: center;
+    margin: 5px 8px;
   }
 }
