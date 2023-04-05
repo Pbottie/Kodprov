@@ -1,0 +1,6 @@
+.card {
+    margin: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+}
